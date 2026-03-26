@@ -80,10 +80,10 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Top bar */}
-      <header className="border-b border-[var(--border)] bg-[var(--bg-1)] sticky top-0 z-40">
+      <header className="border-b border-(--border) bg-(--bg-1) sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-lg bg-[var(--accent)] flex items-center justify-center">
+            <div className="w-7 h-7 rounded-lg bg-(--accent) flex items-center justify-center">
               <Zap size={14} className="text-black" />
             </div>
             <span className="font-semibold text-sm tracking-tight">
@@ -115,10 +115,10 @@ export default function Home() {
         {/* Sidebar */}
         <aside
           className={cn(
-            "w-52 flex-shrink-0 space-y-5",
+            "w-52 shrink-0 space-y-5",
             "hidden sm:block",
             sidebarOpen &&
-              "fixed sm:static inset-0 z-30 bg-[var(--bg-0)] sm:bg-transparent pt-16 sm:pt-0 px-4 sm:px-0 overflow-y-auto sm:overflow-visible block"
+              "fixed sm:static inset-0 z-30 bg-(--bg-0) sm:bg-transparent pt-16 sm:pt-0 px-4 sm:px-0 overflow-y-auto sm:overflow-visible block"
           )}
         >
           {/* Stats */}
